@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Eğitim Fonksiyon Grubu 2</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMO_FG2TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMO_FG2</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMEHMETO_F0002</FUNCNAME>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_NUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_PRIME</PARAMETER>
+       <TYP>INT1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_EVEN</PARAMETER>
+       <TYP>INT2</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_PERFECT</PARAMETER>
+       <TYP>INT2</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Doğal sayı</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_PRIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>B20 int1 için yapay (her yerde yerel!)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_EVEN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Seçme kutusu</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_PERFECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>2 baytlık tamsayı (işaretli)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMEHMETO_F0003</FUNCNAME>
+     <SHORT_TEXT>6lı Kontrol</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_NUMBERS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZVKT_MO_TT0002</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_FLAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_NUMBERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sayısal İşlem Tablosu</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Doğal sayı</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

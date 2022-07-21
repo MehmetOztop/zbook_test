@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Eğitim Fonksiyon Grubu</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMO_FG1F01</SOBJ_NAME>
+    <SOBJ_NAME>LZMO_FG1TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMO_FG1</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMEHMETO_F0001</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Webservice Veri Aktarımı</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VBELN</PARAMETER>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_DETAIL</PARAMETER>
+       <TYP>VBAK</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SD belgesi numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_DETAIL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Satış belgesi: Başlık verileri</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMO_DOWNLOAD_EXCEL_TEMPLATE</FUNCNAME>
+     <SHORT_TEXT>Excel Şablon İndirme</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZMO_GET_COLUMN_NAME</FUNCNAME>
+     <SHORT_TEXT>Kolon İsmi</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_COLUMN_NUMBER</PARAMETER>
+       <TYP>I</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_COLUMN_NAME</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_COLUMN_NUMBER</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_COLUMN_NAME</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMO_OLE_EXCEL_DOWNLOAD</FUNCNAME>
+     <SHORT_TEXT>Excel Şablonu Yaratma</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_SUBJECT</PARAMETER>
+       <TYP>CHAR50</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <TYP>ANY TABLE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_TITLE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZEM_STR01_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_COMPONENTS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LTR_T_DD03L</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ITALIC</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>INT1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TITLE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR35</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_SUBJECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Açıklama</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_TITLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ZEM_STR01</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_COMPONENTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>DD03L (standard)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ITALIC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Genel gösterge</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TITLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Veri öğesi numarası - 35 krk.</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMO_TEST</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT> dDd</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_DETAIL</PARAMETER>
+       <TYP>MARA</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_DETAIL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Genel malzeme verileri</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
